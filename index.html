@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>SVG Solar System</title>
+</head>
+<body>
+
+<div id="gameWinPopup" class="modal">
+    <div id="WinPopUpContent" class="popUpContent">
+        <h1>YOU WIN!</h1>
+        <p>You've won the game, you smartarse.</p>
+        <button class="endButton" id="closeWinModal">Restart</button>
+    </div>
+</div>
+
+<div id="gameLosePopup" class="modal">
+    <div id="LosePopUpContent" class="popUpContent">
+        <h1>GAME OVER</h1>
+        <p>You've lost the game, and now you're lost in space for eternity...unless you play again?</p>
+        <button class="endButton" id="closeLoseModal">Restart</button>
+    </div>
+</div>
+
+<div id="splash">
+    <div class="splashHeading"><h1>PlanetStorm</h1></div>
+    <div class="splashOuterbox">
+        <div class="splashInnerbox">
+            <img src="imgs/planetrings.png" class="logo">
+            <button class="startButton">Start</button>
+        </div>
+        <div class="splashInnerbox">
+            <h2 class="instructionsTitle">Instructions</h2>
+            <div class="instructionDetails">
+                <p>The planets spin at different speeds.</p>
+                <p>Click them in order, from outermost inwards, to stop them moving.</p>
+                <p>Watch out for the meteor showers...</p>
+                <p>Get hit and you're toast.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="game">
+<!--    <div id="timer"><p></p></div>-->
+    <svg width="1000" height="1000">
+        <rect width="1000" height="1000" fill="#000"/>
+
+        <circle cx="900" cy="900" r="2" stroke="#fff" stroke-width="1" fill="#fff"/>
+        <circle cx="50" cy="50" r="2" stroke="#fff" stroke-width="1"fill="#fff"/>
+        <circle cx="150" cy="100" r="1" stroke="#fff" stroke-width="1" fill="#fff"/>
+        <circle cx="750" cy="50" r="2" stroke="#fff" stroke-width="1" fill="#fff"/>
+        <circle cx="790" cy="90" r="1" stroke="#fff" stroke-width="1" fill="#fff"/>
+        <circle cx="100" cy="890" r="1" stroke="#fff" stroke-width="1" fill="#fff"/>
+
+        <circle cx="500" cy="500" r="465" stroke="#fff" stroke-width="1"/>
+        <circle class="planets rotateNeptune" cx="965" cy="500" r="28" stroke="#1F456E"  fill="#1F456E" stroke-width="1"/>
+
+        <circle cx="500" cy="500" r="400" stroke="#fff" stroke-width="1"/>
+        <circle class="planets rotateUranus" cx="900" cy="500" r="32" stroke="#187BCD"  fill="#187BCD" stroke-width="1"/>
+
+        <circle cx="500" cy="500" r="320" stroke="#fff" stroke-width="1"/>
+        <circle class="planets rotateSaturn" cx="820" cy="500" r="40" stroke="#9A7B4F"  fill="#9A7B4F" stroke-width="1"/>
+
+        <circle cx="500" cy="500" r="230" stroke="#fff" stroke-width="1"/>
+        <circle class="planets rotateJupiter" cx="730" cy="500" r="45" stroke="#E2A76F"  fill="#E2A76F" stroke-width="1"/>
+
+        <circle cx="500" cy="500" r="160" stroke="#fff" stroke-width="1"/>
+        <circle class="planets rotateMars" cx="660" cy="500" r="9" stroke="#960019"  fill="#960019" stroke-width="1"/>
+
+        <circle cx="500" cy="500" r="130" stroke="#fff" stroke-width="1"/>
+        <circle class="planets rotateEarth" cx="630" cy="500" r="10" stroke="#187BCD"  fill="#187BCD" stroke-width="1"/>
+
+        <circle cx="500" cy="500" r="100" stroke="#fff" stroke-width="1"/>
+        <circle class="planets rotateVenus" cx="600" cy="500" r="10" stroke="#8ACEFF"  fill="#8ACEFF" stroke-width="1"/>
+
+        <circle cx="500" cy="500" r="70" stroke="#fff" stroke-width="1"/>
+        <circle class="planets rotateMercury" cx="570" cy="500" r="5" stroke="#CEB180"  fill="#CEB180" stroke-width="1"/>
+
+        <circle class="sun" cx="500" cy="500" r="40" stroke="#FEE12B" stroke-width="1" fill="#FEE12B"/>
+    </svg>
+</div>
+</body>
+</html>

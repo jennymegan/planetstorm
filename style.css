@@ -80,7 +80,6 @@ button {
     cursor: pointer;
 }
 
-
 #game{
     display: none;
     justify-content: space-around;
@@ -88,7 +87,6 @@ button {
     background-color: #000;
     color: #fff;
 }
-
 
 #splash {
     background-color: #888;

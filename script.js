@@ -17,7 +17,6 @@ function startTimer(duration, element) {
     }, 1000)
 }
 
-
 function resetGame() {
     document.querySelectorAll('.planets').forEach((planet, i) => {
         planet.classList.remove('stopped')
@@ -64,10 +63,6 @@ document.querySelector('#closeLoseModal').addEventListener('click', () => {
     resetGame()
 })
 
-
-// to do
-// timer, asteroids, styling, remove event listeners
-
 document.querySelectorAll('.planets').forEach((planet, i) => {
     planet.addEventListener('click', () => {
         let num = planet.dataset.num
@@ -90,7 +85,6 @@ document.querySelectorAll('.planets').forEach((planet, i) => {
         }
     })
 })
-
 
 const asteroid = document.querySelector('.asteroid')
 const asteroidMove = asteroid.animate([

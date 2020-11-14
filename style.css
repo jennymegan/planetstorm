@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Guntur&family=Squada+One&display=swap');
+
 * {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -8,6 +11,7 @@ body {
     margin: 0;
     font-size: 62.5%;
     background-color: #888888;
+    font-family: 'Hind Guntur', sans-serif;
 }
 
 @keyframes rotation {
@@ -19,8 +23,21 @@ body {
     }
 }
 
+h1 {
+    font-family: 'Squada One', serif;
+    font-size: 5rem;
+}
+
+button {
+    font-family: 'Hind Guntur', sans-serif;
+}
+
 .planets {
     transform-origin: 500px 500px;
+}
+
+.asteroid {
+    z-index: 10;
 }
 
 .rotateMercury {
@@ -128,13 +145,6 @@ body {
     font-size: 1rem;
 }
 
-#timer {
-    padding: 60px;
-    font-size: 2rem;
-    display: inline;
-}
-
-
 .modal {
     position: fixed;
     display: none;
@@ -164,7 +174,7 @@ body {
 
 .popUpContent p {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
     padding: 20px;
 }
 
@@ -179,4 +189,16 @@ body {
     padding: 10px;
     font-size: 1rem;
     cursor: pointer;
+}
+
+#timer {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 10%;
+    color: #000000;
+    top: 30px;
+    left: 30px;
+    font-size: 2rem;
+    padding: 20px 30px;
 }
